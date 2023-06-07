@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mozilla</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+      <img src="originals/mozilla-dinosaur-head-1200w.png" alt="firefox-logo, an orange fox partially surrounding and overlooking the Earth"
+      title="firefox-logo">
+    </header>
+
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2bLpA7jiDIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          <p>
+            <a href="/en-US/docs/Glossary">
+              iframes을 지원하지 않는 브라우저용 링크
+            </a>
+          </p>
+        </iframe>
+
+        <h2>Rocking the free web</h2>
+
+        <p>Mozilla are a global community of technologists, thinkers, and builders, working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future. lorem</p>
+
+        <p>Click on the images below to find more information about the cool stuff Mozilla does. <a href="https://www.flickr.com/photos/mathiasappel/21675551065/">Red panda picture</a> by Mathias Appel.</p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="https://www.mozilla.org/en-US/firefox/new/">
+          <img srcset="originals/firefox_logo-only_RGB-1200w.png 1200w,
+          originals/firefox_logo-only_RGB-600w.png 600w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/firefox_logo-only_RGB-1200w.png" alt="firefox-logo"
+          title="firefox-link">
+
+        </a>
+        <a href="https://www.mozilla.org/">
+          <img srcset="originals/mozilla-dinosaur-head-1200w.png 1200w,
+          originals/mozilla-dinosaur-head-600w.png 600w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/mozilla-dinosaur-head-1200w.png" alt="mozilla-dinosaur-head"
+          title="mozilla-dinosaur-head">
+        </a>
+        <a href="https://addons.mozilla.org/">
+          <img srcset="originals/firefox-addons.jpg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/firefox-addons.jpg" alt="firefox-addons"
+          title="firefox-addons">
+        </a>
+        <a href="https://developer.mozilla.org/en-US/">
+          <img srcset="originals/mdn.svg 400w"
+          sizes="(max-width: 500px) 120px, 400px"
+          src="originals/mdn.svg" alt="mdn"
+          title="mdn">
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <!-- insert picture element -->
+        <picture>
+          <source srcset="originals/red-panda-potrait.jpg"
+                  media="(max-width:50vw)">
+          <source srcset="originals/red-panda-potrait.jpg"
+                  media="(orientation: portrait)">
+          <source srcset="originals/red-panda.jpg"
+                  media="(orientation: landscape)">
+          <img src="originals/red-panda.jpg" alt="red-panda">
+      </picture>
+      
+      </div>
+
+    </main>
+  </body>
+</html>
